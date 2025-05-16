@@ -2,6 +2,8 @@
 
 A task manager written in python, running in CLI !  
 
+![Logo do PyTask](https://i.imgur.com/exemplo123.png)
+
 ## Features
 
 -  Add, view, and manage tasks

@@ -1,4 +1,4 @@
-from tasks import managetasks, viewtasks, removetasks
+from tasks import managetasks, viewtasks, removetasks, marktask
 import os
 
 def clear():
@@ -7,7 +7,7 @@ def clear():
 while True:
     clear()
     print(" | Welcome to the PYTASKER |")
-    print(" | 1. View tasks | \n | 2. Manage tasks | \n | 3. Remove tasks | \n | 4. Exit |")
+    print(" | 1. View tasks | \n | 2. Manage tasks | \n | 3. Remove tasks | \n | 4. Mark taks as done | \n | 5. Exit |")
 
     option = input("Choose your option >> ").strip()
 
@@ -21,6 +21,9 @@ while True:
         clear()
         removetasks()
     elif option == '4':
+        clear()
+        marktask()
+    elif option == '5':
         print("Exiting PYTASKER... Goodbye!")
         break
     else:

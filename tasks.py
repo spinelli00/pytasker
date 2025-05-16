@@ -9,7 +9,7 @@ def viewtasks():
     print("\n--- TASK LIST ---")
     for i, task in enumerate(tasks, 1):
         status = "✔️" if task.get("done") else "❌"
-        print(f"{i}. {task['title']} [{status}]")
+        print(f"{i}. {task['title']} [{status} ]")
     print()
 
 def managetasks():
@@ -37,3 +37,26 @@ def removetasks():
             print("Invalid index.\n")
     except ValueError:
         print("Please enter a valid number.\n")
+
+def marktask():
+    tasks = load_tasks()
+    if not tasks:
+        print("No tasks to mark.\n")
+        return
+
+    viewtasks()
+    try:
+        mark = int(input("Enter the number of the task to mark as done: ")) - 1
+        if 0 <= mark < len(tasks):
+            tasks[mark]['done'] = True
+            save_tasks(tasks)
+            print(f"Task '{tasks[mark]['title']}' marked as done!\n")
+        else:
+            print("Invalid task number.\n")
+    except ValueError:
+        print("Please enter a valid number.\n")
+
+
+
+
+
