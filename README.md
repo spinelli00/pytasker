@@ -2,7 +2,7 @@
 
 A task manager written in python, running in CLI !  
 
-![Logo do PyTask](Pytask_Logo.png)
+<img src="Pytask_Logo.png" height="100" />
 
 ## Features
 
