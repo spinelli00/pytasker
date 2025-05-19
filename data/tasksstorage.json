@@ -1,10 +1,10 @@
 [
     {
         "title": "Include datetime in the tasks",
-        "done": false
+        "done": true
     },
     {
         "title": "Att the readme",
-        "done": false
+        "done": true
     }
 ]

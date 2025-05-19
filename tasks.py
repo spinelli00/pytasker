@@ -14,7 +14,7 @@ def viewtasks():
 
 def managetasks():
     tasks = load_tasks()
-    title = input("Enter task title: ")
+    title: str = input("Enter task title: ")
     new_task = {"title": title, "done": False}
     tasks.append(new_task)
     save_tasks(tasks)
@@ -28,7 +28,7 @@ def removetasks():
 
     viewtasks()
     try:
-        index = int(input("Enter the number of the task to remove: ")) - 1
+        index: int = (input("Enter the number of the task to remove: ")) - 1
         if 0 <= index < len(tasks):
             removed = tasks.pop(index)
             save_tasks(tasks)

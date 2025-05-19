@@ -9,7 +9,7 @@ while True:
     print(" | Welcome to the PYTASKER |")
     print(" | 1. View tasks | \n | 2. Manage tasks | \n | 3. Remove tasks | \n | 4. Mark taks as done | \n | 5. Exit |")
 
-    option = input("Choose your option >> ").strip()
+    option: int = input("Choose your option >> ").strip()
 
     if option == '1':
         clear()
